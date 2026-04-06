@@ -8,7 +8,10 @@
 [![Cursor](https://img.shields.io/badge/Cursor-Skill-blueviolet)](https://cursor.com)
 [![AgentSkills](https://img.shields.io/badge/AgentSkills-Style-green)](https://agentskills.io)
 
-<br>给一篇论文 PDF，生成一篇**像新智元那样有传播感的 AI 公众号文章**<br>
+<br>习惯了短平快的公众号文章，读不进枯燥的论文？<br>
+导师爱看公众号，却对你的汇报提不起兴趣？<br>
+天天喊着要颠覆程序员，为啥不把做公众号的先颠覆了？<br>
+给一篇论文，生成一篇新智元式的 AI 公众号文章！<br>
 
 [安装](#安装) · [使用](#使用) · [项目结构](#项目结构)
 
