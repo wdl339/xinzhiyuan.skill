@@ -11,7 +11,7 @@ allowed-tools: Read, Write, Edit, Bash
 >
 > 本 Skill 支持中英文。根据用户第一条消息的语言，全程使用同一语言回复。如果论文是英文、但用户用中文提问，默认输出中文稿，除非用户明确要求英文版。
 
-# 新智元.skill（Cursor 版）
+# 新智元.skill
 
 ## 触发条件
 

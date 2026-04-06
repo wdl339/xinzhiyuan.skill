@@ -98,12 +98,6 @@ git clone https://github.com/wdl339/xinzhiyuan.skill .cursor/skills/create-xinzh
 - 实验部分只保留最关键结果
 - 结尾给趋势判断或开放问题
 
-如果你想更克制，可以在 prompt 或 Skill 里继续加一句：
-
-```text
-保守一点，不要太像爆款号，边界和限制多写一点
-```
-
 ---
 
 ## 项目结构
@@ -116,9 +110,3 @@ xinzhiyuan-skill/
 ├── headline-patterns.md      # 标题模板库
 └── examples.md               # 改写示例
 ```
-
----
-
-## 注意事项
-
-- 标题可以有传播感，但正文不能超出证据范围
