@@ -2,7 +2,7 @@
 
 # 新智元.skill
 
-> *"论文不是不能看，是没人有空按论文的方式看。"*
+> *"你们搞大模型的就是码奸，你们已经害死前端兄弟了，还要害死后端兄弟，测试兄弟，运维兄弟，害死网安兄弟，害死ic兄弟，害死公众号兄弟，最后害死自己害死全人类"*
 
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://python.org)
 [![Cursor](https://img.shields.io/badge/Cursor-Skill-blueviolet)](https://cursor.com)
@@ -10,9 +10,8 @@
 
 <br>
 
-给一篇论文 PDF、一个 arXiv 标题、或者一份技术发布说明<br>
+给一篇论文 PDF、一个 arXiv 标题、或者一份技术报告<br>
 生成一篇**像新智元那样有传播感的 AI 公众号文章**<br>
-先讲影响，再讲方法；先抓眼球，再守住事实
 
 [安装](#安装) · [使用](#使用) · [实战-demo](#实战-demo) · [项目结构](#项目结构) · [详细安装说明](INSTALL.md)
 
@@ -32,9 +31,7 @@
 - 实验结果更像观点
 - 结尾更像行业判断
 
-同时保留一个硬边界：
-
-> **可以夸张叙事，不可以夸张事实。**
+注：本 skill 全程由 Cursor 生成与审核，由人类点击发布。若 AI 生成的内容中出现不适宜的观点，本人类不对 AI 觉醒的自由意志负责。
 
 ---
 
@@ -65,27 +62,28 @@
 
 ```bash
 mkdir -p ~/.cursor/skills
-cp -R /root/xxx-skill/xinzhiyuan-skill ~/.cursor/skills/create-xinzhiyuan
+git clone https://github.com/wdl339/xinzhiyuan.skill ~/.cursor/skills/create-xinzhiyuan
 ```
 
 也可以安装到项目级目录：
 
 ```bash
 mkdir -p .cursor/skills
-cp -R /root/xxx-skill/xinzhiyuan-skill .cursor/skills/create-xinzhiyuan
+git clone https://github.com/wdl339/xinzhiyuan.skill .cursor/skills/create-xinzhiyuan
 ```
 
 ### Claude Code / 兼容 AgentSkills 的环境
 
 ```bash
 mkdir -p ~/.claude/skills
-cp -R /root/xxx-skill/xinzhiyuan-skill ~/.claude/skills/create-xinzhiyuan
+git clone https://github.com/wdl339/xinzhiyuan.skill ~/.claude/skills/create-xinzhiyuan
 ```
 
 ### 依赖
 
 ```bash
-cd /root/xxx-skill/xinzhiyuan-skill
+git clone https://github.com/wdl339/xinzhiyuan.skill
+cd xinzhiyuan.skill
 pip3 install -r requirements.txt
 ```
 
@@ -120,7 +118,8 @@ pip3 install -r requirements.txt
 ### 1. 本地 PDF -> 准备改写材料
 
 ```bash
-cd /root/xxx-skill/xinzhiyuan-skill
+git clone https://github.com/wdl339/xinzhiyuan.skill
+cd xinzhiyuan.skill
 
 python3 tools/paper_demo.py \
   --pdf "/path/to/paper.pdf"
@@ -141,7 +140,8 @@ demo_outputs/<paper-slug>/
 ### 2. 给定 arXiv 标题 -> 自动下载并准备材料
 
 ```bash
-cd /root/xxx-skill/xinzhiyuan-skill
+git clone https://github.com/wdl339/xinzhiyuan.skill
+cd xinzhiyuan.skill
 
 python3 tools/paper_demo.py \
   --title "Attention Is All You Need"
@@ -234,12 +234,3 @@ xinzhiyuan-skill/
 - arXiv 标题检索是近似匹配，建议尽量给完整标题
 - PDF 文本抽取质量取决于论文排版；扫描版 PDF 不一定适合
 - `--generate-article` 依赖你本地可用的 OpenAI 兼容接口
-
----
-
-## 写在最后
-
-论文真正难读的，往往不是公式，而是它默认你已经知道为什么这件事重要。
-
-这个 Skill 做的事，就是把那层默认上下文补回来：  
-先把"为什么要看"说清楚，再把"作者到底做了什么"讲明白，最后让一篇论文不只是论文，而是一条值得转发、值得讨论、也值得质疑的行业信号。

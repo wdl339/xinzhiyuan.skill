@@ -8,14 +8,14 @@
 
 ```bash
 mkdir -p ~/.cursor/skills
-cp -R /root/xxx-skill/xinzhiyuan-skill ~/.cursor/skills/create-xinzhiyuan
+git clone https://github.com/wdl339/xinzhiyuan.skill ~/.cursor/skills/create-xinzhiyuan
 ```
 
 项目级安装：
 
 ```bash
 mkdir -p .cursor/skills
-cp -R /root/xxx-skill/xinzhiyuan-skill .cursor/skills/create-xinzhiyuan
+git clone https://github.com/wdl339/xinzhiyuan.skill .cursor/skills/create-xinzhiyuan
 ```
 
 安装后，在 Cursor Agent 里直接说：
@@ -28,7 +28,7 @@ cp -R /root/xxx-skill/xinzhiyuan-skill .cursor/skills/create-xinzhiyuan
 
 ```bash
 mkdir -p ~/.claude/skills
-cp -R /root/xxx-skill/xinzhiyuan-skill ~/.claude/skills/create-xinzhiyuan
+git clone https://github.com/wdl339/xinzhiyuan.skill ~/.claude/skills/create-xinzhiyuan
 ```
 
 ---
@@ -36,7 +36,8 @@ cp -R /root/xxx-skill/xinzhiyuan-skill ~/.claude/skills/create-xinzhiyuan
 ## 依赖安装
 
 ```bash
-cd /root/xxx-skill/xinzhiyuan-skill
+git clone https://github.com/wdl339/xinzhiyuan.skill
+cd xinzhiyuan.skill
 pip3 install -r requirements.txt
 ```
 
@@ -68,7 +69,8 @@ export OPENAI_MODEL="gpt-4.1-mini"
 ## 快速验证
 
 ```bash
-cd /root/xxx-skill/xinzhiyuan-skill
+git clone https://github.com/wdl339/xinzhiyuan.skill
+cd xinzhiyuan.skill
 
 python3 tools/paper_demo.py --help
 ```
