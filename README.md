@@ -8,10 +8,7 @@
 [![Cursor](https://img.shields.io/badge/Cursor-Skill-blueviolet)](https://cursor.com)
 [![AgentSkills](https://img.shields.io/badge/AgentSkills-Style-green)](https://agentskills.io)
 
-<br>
-
-给一篇论文 PDF、一个 arXiv 标题、或者一份技术报告<br>
-生成一篇**像新智元那样有传播感的 AI 公众号文章**<br>
+<br>给一篇论文 PDF，生成一篇**像新智元那样有传播感的 AI 公众号文章**<br>
 
 [安装](#安装) · [使用](#使用) · [项目结构](#项目结构)
 
@@ -37,10 +34,7 @@
 
 ## 功能特性
 
-### Skill 层
-
 - 论文 -> 新智元风格公众号稿
-- abstract / README / 发布说明 -> 媒体化解读
 - 已有普通稿 -> 标题、导语、结构、结尾重写
 - 支持继续迭代："更像公众号一点"、"保守一点"、"标题党一点"
 
@@ -84,21 +78,12 @@ git clone https://github.com/wdl339/xinzhiyuan.skill .cursor/skills/create-xinzh
 
 - "把这篇 paper 改成新智元风格"
 - "给这篇论文写一篇公众号稿"
-- "把这个模型发布整理成媒体稿"
 - "更像公众号一点"
 - "别太夸张，保守一点"
 
 ---
 
 ## 效果预期
-
-这个 skill 默认不是做"忠实直译"，而是做"媒体化重组"：
-
-- 标题先给观点
-- 导语先讲影响
-- 方法部分优先讲直觉
-- 实验部分只保留最关键结果
-- 结尾给趋势判断或开放问题
 
 示例效果图：
 
