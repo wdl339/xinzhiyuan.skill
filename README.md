@@ -21,7 +21,7 @@
 
 ## 这是什么
 
-`xinzhiyuan-skill` 是一个面向 Cursor 的写作型 Skill。
+`xinzhiyuan-skill` 是一个写作型 Skill。
 
 它不是做论文精翻，而是把论文、abstract、模型发布稿、README、研究笔记，改写成一种更像 AI 媒体稿的表达：
 
@@ -62,6 +62,8 @@ mkdir -p .cursor/skills
 git clone https://github.com/wdl339/xinzhiyuan.skill .cursor/skills/create-xinzhiyuan
 ```
 
+当然，在其他支持 Skill 的环境里（例如 OpenClaw）使用应该也没问题，只是人类作者懒得尝试了。
+
 ---
 
 ## 使用
@@ -97,6 +99,10 @@ git clone https://github.com/wdl339/xinzhiyuan.skill .cursor/skills/create-xinzh
 - 方法部分优先讲直觉
 - 实验部分只保留最关键结果
 - 结尾给趋势判断或开放问题
+
+示例效果图：
+
+![xinzhiyuan.skill 生成效果示例](./assets/example.png)
 
 ---
 
