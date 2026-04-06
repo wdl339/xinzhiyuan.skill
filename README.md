@@ -9,7 +9,7 @@
 [![AgentSkills](https://img.shields.io/badge/AgentSkills-Style-green)](https://agentskills.io)
 
 <br>习惯了短平快的公众号文章，读不进枯燥的论文？<br>
-导师爱看公众号，却对你的汇报提不起兴趣？<br>
+导师爱看 AI 公众号，却对你的论文提不起兴趣？<br>
 天天喊着要颠覆程序员，为啥不把做公众号的先颠覆了？<br>
 <br>给一篇论文，生成一篇**新智元式的 AI 公众号文章**！<br>
 
