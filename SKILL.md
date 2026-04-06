@@ -11,7 +11,7 @@ allowed-tools: Read, Write, Edit, Bash
 >
 > 本 Skill 支持中英文。根据用户第一条消息的语言，全程使用同一语言回复。如果论文是英文、但用户用中文提问，默认输出中文稿，除非用户明确要求英文版。
 
-# 新智元.skill 创建器（Claude Code 版）
+# 新智元.skill（Cursor 版）
 
 ## 触发条件
 
@@ -33,24 +33,6 @@ allowed-tools: Read, Write, Edit, Bash
 - "保守一点，别太夸张"
 - "补点背景"
 - "把结尾改成更有传播感"
-
----
-
-## 工具使用规则
-
-本 Skill 运行在 Agent / Cursor / Claude Code 环境，推荐这样使用工具：
-
-| 任务 | 使用工具 |
-|------|---------|
-| 读取本地 PDF | `Read` 工具，或 `Bash` → `python3 ${CLAUDE_SKILL_DIR}/tools/paper_demo.py --pdf "{path}"` |
-| 根据标题从 arXiv 下载论文 | `Bash` → `python3 ${CLAUDE_SKILL_DIR}/tools/paper_demo.py --title "{paper_title}"` |
-| 生成 demo prompt | `Bash` → `python3 ${CLAUDE_SKILL_DIR}/tools/paper_demo.py ...`，读取输出的 `rewrite_prompt.md` |
-| 直接产出媒体稿 demo | `Bash` → `python3 ${CLAUDE_SKILL_DIR}/tools/paper_demo.py ... --generate-article` |
-| 读取风格规范 | `Read` → `style-guide.md` |
-| 读取标题模板 | `Read` → `headline-patterns.md` |
-| 读取改写示例 | `Read` → `examples.md` |
-
-如果用户要做"先从 arXiv 拉论文，再改写成新智元风格"的完整链路，优先使用 `tools/paper_demo.py` 先准备材料。
 
 ---
 
@@ -105,15 +87,6 @@ allowed-tools: Read, Write, Edit, Bash
 - 项目主页 / README / 发布说明
 - 用户手动粘贴的方法、实验、结论
 - 用户已经写好的普通解读稿
-
-也支持通过 demo 脚本先整理原材料：
-
-```bash
-python3 ${CLAUDE_SKILL_DIR}/tools/paper_demo.py --pdf "/path/to/paper.pdf"
-python3 ${CLAUDE_SKILL_DIR}/tools/paper_demo.py --title "Attention Is All You Need"
-```
-
-生成的 `rewrite_prompt.md`、`paper_meta.json`、`source_excerpt.txt` 都可以继续作为本 Skill 的输入材料。
 
 如果用户只给一句话，比如：
 
