@@ -13,7 +13,7 @@
 天天喊着要颠覆程序员，为啥不把做公众号的先颠覆了？<br>
 <br>给一篇论文，生成一篇**新智元式的 AI 公众号文章**！<br>
 
-[安装](#安装) · [使用](#使用) · [项目结构](#项目结构)
+[安装](#安装) · [使用](#使用) · [项目结构](#项目结构) · [English README](./README_EN.md)
 
 </div>
 
@@ -97,10 +97,13 @@ git clone https://github.com/wdl339/xinzhiyuan.skill .cursor/skills/create-xinzh
 ## 项目结构
 
 ```text
-xinzhiyuan-skill/
+xinzhiyuan.skill/
 ├── SKILL.md                  # Skill 主入口
-├── README.md                 # 项目说明
+├── README.md                 # 中文说明
+├── README_EN.md              # English README
 ├── style-guide.md            # 新智元风格速查
 ├── headline-patterns.md      # 标题模板库
-└── examples.md               # 改写示例
+├── examples.md               # 改写示例
+└── assets/
+    └── example.png           # 生成效果示例图
 ```
